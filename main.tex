@@ -37,6 +37,17 @@
 
 As shown in \Cref{fig:rectangle}, \lipsum[100].
 
+However, \citet{kao2019neuroscience} said that \lipsum[20].
+
+% [ this will typeset as "Here is a statement (Author et al., 2014)" ]
+% Here is a statement \citep{ref-to-back-it-up}.
+
+% [ this will typeset as "Here is another statement (but see Author et al., 2014)" ]
+% Here is another statement (but \citealp{caveat-ref}).
+
+% [ this will typeset as "As shown in Author et al. (2014), the brain is powerful"
+% As shown in \citet{some-ref}, the brain is powerful.
+
 \begin{figure*}
     \centering
    \begin{tikzpicture}
@@ -47,9 +58,10 @@ As shown in \Cref{fig:rectangle}, \lipsum[100].
 
 
 
-
 \end{multicols}
-%
 
+\clearpage
+\bibliographystyle{unsrtnat}
+\bibliography{refs}
 
 \end{document}
