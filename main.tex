@@ -1,0 +1,55 @@
+\documentclass[a4paper,10pt]{article}
+
+\input{header}
+
+\title{My great neuroscience paper that will\\
+    not be desk-rejected on grounds of formatting}
+
+\author[1,2,3,@]{\normalsize \bfseries Someone here${}^{\star \rm}$}
+\author[1,3,@]{\normalsize \bfseries Another first author${}^{\star \rm}$} 
+\author[1,2]{\bfseries Senior Author$^\dagger$} 
+\author[1]{\bfseries Another Senior Author$^\dagger$} 
+
+\affil[1]{\small Computational and Biological Learning Lab, Department of Engineering, University of Cambridge, Cambridge, U.K.} 
+\affil[2]{Some other cool place} 
+\affil[3]{And another cool place} 
+\affil[@]{corresponding.author@cam.ac.uk}
+\affil[* $\dagger$]{Equal contribution}
+
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+   Summary. 
+\end{abstract}
+
+
+\begin{multicols}{2}
+\small
+\linenumbers
+
+\lipsum[100]
+\lipsum[100]
+\lipsum[100]
+
+As shown in \Cref{fig:rectangle}, \lipsum[100].
+
+\begin{figure*}
+    \centering
+   \begin{tikzpicture}
+   \draw (0,0) rectangle ++(40em,10em); 
+   \end{tikzpicture} 
+   \caption{\label{fig:rectangle}A rectangle.}
+\end{figure*}
+
+
+
+
+\end{multicols}
+%
+
+
+\end{document}
